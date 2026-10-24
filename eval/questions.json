@@ -1,0 +1,212 @@
+[
+  {
+    "id": "q01",
+    "question": "How long is the waiting period for ShieldCare Health Plus?",
+    "doc": "shieldcare-health",
+    "section": "Waiting Periods",
+    "expected": "30 days"
+  },
+  {
+    "id": "q02",
+    "question": "Within how many days must I report an accident to RoadSafe?",
+    "doc": "roadsafe-auto",
+    "section": "Claims Procedure",
+    "expected": "30 days"
+  },
+  {
+    "id": "q03",
+    "question": "What deductible applies to each HomeGuard claim?",
+    "doc": "homeguard-home",
+    "section": "Coverage",
+    "expected": "$1,500"
+  },
+  {
+    "id": "q04",
+    "question": "What monthly premium does GlobeTrek Travel Protect charge?",
+    "doc": "globetrek-travel",
+    "section": "Premiums and Grace Period",
+    "expected": "$45"
+  },
+  {
+    "id": "q05",
+    "question": "How long is the free look period on LifeBridge Term Life 20?",
+    "doc": "lifebridge-term",
+    "section": "Cancellation and Free Look",
+    "expected": "30 days"
+  },
+  {
+    "id": "q06",
+    "question": "What does RentSafe Renters Cover exclude about roommates?",
+    "doc": "rentsafe-renters",
+    "section": "Exclusions",
+    "expected": "roommates' belongings"
+  },
+  {
+    "id": "q07",
+    "question": "How many days before PawSure Pet Care cover begins?",
+    "doc": "pawsure-pet",
+    "section": "Waiting Periods",
+    "expected": "14 days"
+  },
+  {
+    "id": "q08",
+    "question": "How many conditions does CriticalCover pay a lump sum for?",
+    "doc": "criticalcover-ci",
+    "section": "Coverage",
+    "expected": "36"
+  },
+  {
+    "id": "q09",
+    "question": "Does CyberArmor pay for losses from unpatched systems?",
+    "doc": "cyberarmor-cyber",
+    "section": "Exclusions",
+    "expected": "unpatched"
+  },
+  {
+    "id": "q10",
+    "question": "How long does BuildRight business interruption cover last?",
+    "doc": "buildright-commercial",
+    "section": "Coverage",
+    "expected": "18 months"
+  },
+  {
+    "id": "q11",
+    "question": "How many days of skilled nursing does SeniorCare cover?",
+    "doc": "seniorcare-health",
+    "section": "Coverage",
+    "expected": "100 days"
+  },
+  {
+    "id": "q12",
+    "question": "What is the liability limit on UmbrellaPlus Personal Liability?",
+    "doc": "umbrellaplus-liability",
+    "section": "Coverage",
+    "expected": "$2,000,000"
+  },
+  {
+    "id": "q13",
+    "question": "What is the grace period for late premium on ShieldCare?",
+    "doc": "shieldcare-health",
+    "section": "Premiums and Grace Period",
+    "expected": "30 days"
+  },
+  {
+    "id": "q14",
+    "question": "Is racing covered by RoadSafe Comprehensive Auto?",
+    "doc": "roadsafe-auto",
+    "section": "Exclusions",
+    "expected": "racing"
+  },
+  {
+    "id": "q15",
+    "question": "How much notice must I give to cancel HomeGuard after free look?",
+    "doc": "homeguard-home",
+    "section": "Cancellation and Free Look",
+    "expected": "30 days"
+  },
+  {
+    "id": "q16",
+    "question": "Is there a sub-limit on medical evacuation under GlobeTrek?",
+    "doc": "globetrek-travel",
+    "section": "Coverage",
+    "expected": "no sub-limit"
+  },
+  {
+    "id": "q17",
+    "question": "How long is the LifeBridge waiting period in days?",
+    "doc": "lifebridge-term",
+    "section": "Waiting Periods",
+    "expected": "365 days"
+  },
+  {
+    "id": "q18",
+    "question": "How many grace days does RentSafe allow for late payment?",
+    "doc": "rentsafe-renters",
+    "section": "Premiums and Grace Period",
+    "expected": "15 days"
+  },
+  {
+    "id": "q19",
+    "question": "Are pre-existing conditions covered by PawSure?",
+    "doc": "pawsure-pet",
+    "section": "Exclusions",
+    "expected": "not covered"
+  },
+  {
+    "id": "q20",
+    "question": "When must a CriticalCover claim be notified?",
+    "doc": "criticalcover-ci",
+    "section": "Claims Procedure",
+    "expected": "60 days"
+  },
+  {
+    "id": "q21",
+    "question": "What is the deductible on CyberArmor Small Business?",
+    "doc": "cyberarmor-cyber",
+    "section": "Coverage",
+    "expected": "$2,500"
+  },
+  {
+    "id": "q22",
+    "question": "What does BuildRight say about vacant premises?",
+    "doc": "buildright-commercial",
+    "section": "Exclusions",
+    "expected": "60 days"
+  },
+  {
+    "id": "q23",
+    "question": "What is the free look period for SeniorCare Medicare Supplement?",
+    "doc": "seniorcare-health",
+    "section": "Cancellation and Free Look",
+    "expected": "30 days"
+  },
+  {
+    "id": "q24",
+    "question": "Does UmbrellaPlus cover business activities?",
+    "doc": "umbrellaplus-liability",
+    "section": "Exclusions",
+    "expected": "not covered"
+  },
+  {
+    "id": "q25",
+    "question": "Is maternity covered under ShieldCare Health Plus?",
+    "doc": "shieldcare-health",
+    "section": "Coverage",
+    "expected": "$15,000"
+  },
+  {
+    "id": "q26",
+    "question": "How far does RoadSafe towing go?",
+    "doc": "roadsafe-auto",
+    "section": "Coverage",
+    "expected": "50 miles"
+  },
+  {
+    "id": "q27",
+    "question": "What is the HomeGuard waiting period before cover starts?",
+    "doc": "homeguard-home",
+    "section": "Waiting Periods",
+    "expected": "7 days"
+  },
+  {
+    "id": "q28",
+    "question": "What is the GlobeTrek free look period?",
+    "doc": "globetrek-travel",
+    "section": "Cancellation and Free Look",
+    "expected": "7 days"
+  },
+  {
+    "id": "q29",
+    "question": "What does LifeBridge pay on terminal illness diagnosis?",
+    "doc": "lifebridge-term",
+    "section": "Coverage",
+    "expected": "25%"
+  },
+  {
+    "id": "q30",
+    "question": "When are hereditary conditions covered by PawSure?",
+    "doc": "pawsure-pet",
+    "section": "Coverage",
+    "expected": "12-month"
+  }
+]
