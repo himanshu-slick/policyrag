@@ -18,4 +18,5 @@ EMBED_DIM = 384
 RERANK_MODEL = "BAAI/bge-reranker-base"
 
 CANDIDATES = 20  # per retriever, before fusion
-MIN_RERANK_SCORE = float(os.getenv("MIN_RERANK_SCORE", "0.3"))  # top rerank prob below this: not found
+# top rerank probability below this means "not found"
+MIN_RERANK_SCORE = float(os.getenv("MIN_RERANK_SCORE", "0.3"))
