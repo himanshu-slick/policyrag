@@ -16,7 +16,7 @@ services:
     env_file: [.env]
     environment:
       DATABASE_URL: postgresql://policyrag:policyrag@db:5432/policyrag
-    ports: ["8000:8000"]
+    ports: ["7860:7860"]
     depends_on:
       db: { condition: service_healthy }
 volumes:

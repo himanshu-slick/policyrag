@@ -60,3 +60,11 @@ def test_parse_pdf_extracts_seven_sections_with_metadata():
     assert chunks[3].section == "Waiting Periods"
     assert "30 days" in chunks[3].content
     assert chunks[0].title == "ShieldCare Health Plus"
+
+
+def test_rate_limit_blocks_after_limit_and_recovers():
+    from policyrag.api import LIMIT, WINDOW, check_rate
+
+    assert all(check_rate("1.1.1.1", now=0.0) for _ in range(LIMIT))
+    assert not check_rate("1.1.1.1", now=1.0)
+    assert check_rate("1.1.1.1", now=WINDOW + 2.0)

@@ -1,3 +1,13 @@
+---
+title: PolicyRAG
+emoji: 📑
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # PolicyRAG
 
 Cited Q&A over insurance policies using hybrid search and re-ranking, traced in Langfuse and exposed as an MCP server.

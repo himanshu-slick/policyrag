@@ -1,10 +1,27 @@
-from fastapi import FastAPI
+import time
+from collections import defaultdict, deque
+
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
 from policyrag.answer import answer
 
 app = FastAPI(title="PolicyRAG")
+
+LIMIT, WINDOW = 10, 60  # requests per IP per minute: keeps a public demo inside free-tier quota
+_seen: dict[str, deque] = defaultdict(deque)
+
+
+def check_rate(ip: str, now: float | None = None) -> bool:
+    now = time.monotonic() if now is None else now
+    recent = _seen[ip]
+    while recent and now - recent[0] > WINDOW:
+        recent.popleft()
+    if len(recent) >= LIMIT:
+        return False
+    recent.append(now)
+    return True
 
 PAGE = """<!doctype html><title>PolicyRAG</title>
 <h1>PolicyRAG</h1>
@@ -27,7 +44,10 @@ def health() -> dict:
 
 
 @app.post("/ask")
-def ask(body: Ask) -> dict:
+def ask(body: Ask, request: Request) -> dict:
+    ip = request.headers.get("x-forwarded-for", request.client.host).split(",")[0]
+    if not check_rate(ip):
+        raise HTTPException(429, "Too many requests, try again in a minute.")
     return answer(body.question, body.top_k)
 
 
